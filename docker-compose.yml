@@ -1,0 +1,15 @@
+version: '3.5'
+
+services:
+  postgres:
+    container_name: postgres_db
+    image: postgres:14
+    environment:
+      POSTGRES_USER: greenlight
+      POSTGRES_PASSWORD: pa55word
+      POSTGRES_DB: greenlight
+    ports:
+      - "5431:5431"
+    restart: always
+  
+
